@@ -1,27 +1,123 @@
-# CardsApp
+🎬 Movies Magic
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.11.
+Movies Magic is a simple Angular movie cards application that allows users to view, filter, and add movies dynamically using a clean card-based UI.
 
-## Development server
+🚀 Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+📌 Display movies in card layout
 
-## Code scaffolding
+🖼️ Show movie poster image
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+🏷️ Display category, title, rating, and description
 
-## Build
+🔍 Filter movies by category (Comedy, Drama, Action, etc.)
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+➕ Add new movies dynamically
 
-## Running unit tests
+🧠 Uses Angular Material dropdown
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+🖼️ Uses placeholder image if no image URL is provided
 
-## Running end-to-end tests
+⚡ Efficient rendering using trackBy
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+🧩 Functionality Details
+1️⃣ Movie Listing
 
-## Further help
+Movies are displayed as cards
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Each card contains:
+
+Poster image
+
+Category
+
+Movie title
+
+Rating
+
+Description
+
+2️⃣ Category Filter
+
+Dropdown at the top
+
+Options:
+
+All
+
+Comedy
+
+Drama
+
+Action (and more)
+
+Selecting a category filters the displayed movies instantly
+
+3️⃣ Add Movie Feature
+
+User can add a new movie using:
+
+Movie Title
+
+Image URL
+
+Description
+
+Category dropdown
+
+➡️ Clicking Add immediately shows the new movie card.
+
+4️⃣ Image Handling
+
+If Image URL is empty or invalid
+
+A default placeholder image is used:
+
+assets/images/placeholder.jpg
+
+5️⃣ Card Selection
+
+Clicking a card highlights it
+
+Active card styling handled using:
+
+[class.active]="selectedIndex === i"
+
+🛠️ Tech Stack
+
+Angular (v15+)
+
+Angular Material
+
+HTML
+
+CSS
+
+TypeScript
+
+📂 Project Structure (Simplified)
+src/
+ ├── app/
+ │   ├── app.component.ts
+ │   ├── app.component.html
+ │   ├── app.component.css
+ │
+ ├── assets/
+ │   └── images/
+ │       └── placeholder.jpg
+
+▶️ How to Run the Project
+
+Install dependencies
+
+npm install
+
+
+Run development server
+
+ng serve
+
+
+Open in browser
+
+http://localhost:4200
