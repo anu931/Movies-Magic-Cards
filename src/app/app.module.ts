@@ -7,10 +7,15 @@ import { MatSelectModule } from '@angular/material/select';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatButtonModule } from '@angular/material/button';
 import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
+import { MoviesComponent } from './movies/movies.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
@@ -19,7 +24,8 @@ import { AppComponent } from './app.component';
     MatFormFieldModule,
     MatSelectModule,
     MatRadioModule,
-    MatButtonModule
+    MatButtonModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
